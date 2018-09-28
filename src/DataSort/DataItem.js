@@ -5,7 +5,6 @@ class DataItem extends Component {
 
     render(){
         const { name, age, category, color } = this.props;
-        console.log(this.props);
         return(
             <div className='item-wrap' style={{background: color}}>
                 <h4>{name}</h4>

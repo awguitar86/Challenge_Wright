@@ -23,12 +23,11 @@ class DataSort extends Component {
     componentWillMount(){
         let arrOne = [];
         let arrTwo = [];
-        let arrThree = [];
         for(let i = 0; i < Data.data.length; i++){
             arrOne.push(Data.data[i].category);
         }
         for(let i = 0; i < arrOne.length; i++){
-            if(arrTwo.indexOf(arrOne[i]) == -1){
+            if(arrTwo.indexOf(arrOne[i]) === -1){
                 if(arrOne[i] === "one"){
                     arrTwo.splice(0, 0, arrOne[i]);
                 }
@@ -40,15 +39,12 @@ class DataSort extends Component {
                 }
             }
         }
-        console.log(arrTwo);
         this.props.updateData(Data.data);
         this.setState({ userData: Data.data, radioBtns: arrTwo })
-
     }
 
     handleChange(selectedOption) {
         this.setState({ selectedOption });
-        console.log('Option Selected:', selectedOption);
         switch(selectedOption.value){
             case "alphabetically":
                 this.handleAlphabetical();
@@ -61,6 +57,12 @@ class DataSort extends Component {
                 this.handleDefault();
                 break;
         }
+        let oneBtn = document.getElementById("one");
+        let twoBtn = document.getElementById("two");
+        let threeBtn = document.getElementById("three");
+        oneBtn.checked = false;
+        twoBtn.checked = false;
+        threeBtn.checked = false;
     }
 
     handleAlphabetical(){
@@ -80,7 +82,6 @@ class DataSort extends Component {
         for(let i = 0; i < alphabetical.length; i++){
             alphaArray.push(alphabetical[i]);
         }
-        console.log(alphaArray);
         this.setState({ userData: alphaArray });
     }
 
@@ -101,13 +102,11 @@ class DataSort extends Component {
         for(let i = 0; i < priority.length; i++){
             priorityArray.push(priority[i]);
         }
-        console.log(priorityArray)
         this.setState({ userData: priorityArray });
     }
 
     handleDefault(){
         this.setState({ userData: this.props.dataInfo });
-        console.log(this.props.dataInfo);
     }
 
     handleFilter(e){
@@ -128,7 +127,6 @@ class DataSort extends Component {
             {value: 'priority', label: 'User Priority'}
         ];
         const { selectedOption, userData, radioBtns } = this.state;
-        console.log(this.state);
         const displayData = userData.map( item => {
             const index = userData.indexOf(item);
             return ( <DataItem

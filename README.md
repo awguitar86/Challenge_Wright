@@ -9,13 +9,6 @@ Please use React and Redux. If you are not familiar with one or both technologie
 
 Your architecture should support a Single-Page Application
 
-Project Setup and Deliverables
-
-* The project you deliver should be runnable using the npm start or npm build commands
-* Please treat this as production level code using best practices, comments, and documentation
-* Your project folder should be name in the format challenge_[lastname] (ex. challenge_thompson)
-* Please zip your project folder and send it back as an attachment (although we are flexible, especially given how some mail servers might not like some attachments)
-
 ### Dummy Data
 ```
 {

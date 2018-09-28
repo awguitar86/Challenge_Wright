@@ -79,11 +79,11 @@ Project Setup and Deliverables
 ```
 ### HTML and Visuals
 
-·         The grid should display data in the order that it is received
-·         Each person should be displayed in a rectangle with a black border of 2px
-·         There should be 3 person items per row (no need to be responsive)
-·         Each grid item should contain the name, age, and category of the person.
-·         Each grid item should have a corresponding background color based on the priority of the person featured: 1 - Orange 2 - Green 3 - Blue 4 - Purple
+* The grid should display data in the order that it is received
+* Each person should be displayed in a rectangle with a black border of 2px
+* There should be 3 person items per row (no need to be responsive)
+* Each grid item should contain the name, age, and category of the person.
+* Each grid item should have a corresponding background color based on the priority of the person featured: 1 - Orange 2 - Green 3 - Blue 4 - Purple
 
 ### Header Functionality
 

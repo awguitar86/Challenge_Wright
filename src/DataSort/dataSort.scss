@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        margin-left: 40px;
+    }
+}
+
+.select-wrap {
+    margin-right: 40px;
+}

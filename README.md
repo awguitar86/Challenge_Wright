@@ -1,22 +1,23 @@
-## Forcepoint Code Challenge
+# Forcepoint Code Challenge
 
-Language and Framework
+## Language and Framework
 
-·         Please use React and Redux. If you are not familiar with one or both technologies, please propose alternatives before proceeding
-o    We recommend using a tool like create-react-app to handle startup boilerplate
-o    Vanilla Redux is sufficient
-o    Routing is not necessary
-·         Your architecture should support a Single-Page Application
+Please use React and Redux. If you are not familiar with one or both technologies, please propose alternatives before proceeding:
+* We recommend using a tool like create-react-app to handle startup boilerplate
+* Vanilla Redux is sufficient
+* Routing is not necessary
+
+Your architecture should support a Single-Page Application
 
 Project Setup and Deliverables
 
-·         The project you deliver should be runnable using the npm start or npm build commands
-·         Please treat this as production level code using best practices, comments, and documentation
-·         Your project folder should be name in the format challenge_[lastname] (ex. challenge_thompson)
-·         Please zip your project folder and send it back as an attachment (although we are flexible, especially given how some mail servers might not like some attachments)
+* The project you deliver should be runnable using the npm start or npm build commands
+* Please treat this as production level code using best practices, comments, and documentation
+* Your project folder should be name in the format challenge_[lastname] (ex. challenge_thompson)
+* Please zip your project folder and send it back as an attachment (although we are flexible, especially given how some mail servers might not like some attachments)
 
-Dummy Data
-
+### Dummy Data
+```
 {
   "data": [
     {
@@ -75,8 +76,8 @@ Dummy Data
     }
   ]
 }
-
-HTML and Visuals
+```
+### HTML and Visuals
 
 ·         The grid should display data in the order that it is received
 ·         Each person should be displayed in a rectangle with a black border of 2px
@@ -84,11 +85,11 @@ HTML and Visuals
 ·         Each grid item should contain the name, age, and category of the person.
 ·         Each grid item should have a corresponding background color based on the priority of the person featured: 1 - Orange 2 - Green 3 - Blue 4 - Purple
 
-Header Functionality
+### Header Functionality
 
 Please implement a header that allows the user to sort and filter the data.
 
-Implement Sorting
+### Implement Sorting
 
 Provide the user a way to sort the data. The user should be allowed to choose from 3 methods:
 
@@ -96,6 +97,6 @@ Provide the user a way to sort the data. The user should be allowed to choose fr
 2. A-Z: Alphabetically ascending by name
 3. Priority: Numerically ascending by priority
 
-Implement Filtering
+### Implement Filtering
 
 Provide the user with radio buttons that allow them to filter the data. Each radio button should be dynamically generated based on the category field in the dummy data - do not hard-code this. When a filter is selected, only people matching the filter should be displayed.
